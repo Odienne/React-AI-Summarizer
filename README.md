@@ -30,7 +30,7 @@
 
 ## 🌐 Live Demo
 
-[Insert your deployed project link here]
+[[Live Demo here](https://react-ai-summarizer-eight.vercel.app/)]
 
 ---
 
