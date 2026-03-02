@@ -10,7 +10,7 @@ export const handlers = [
       ctx.status(200),
       ctx.json({
         data: { summary: `This is a mock summary for ${url}` },
-      })
+      }),
     );
   }),
 ];

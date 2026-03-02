@@ -1,4 +1,3 @@
-// src/components/__tests__/Demo.test.jsx
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Demo from '../Demo';

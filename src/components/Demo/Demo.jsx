@@ -37,7 +37,7 @@ function Demo() {
   };
 
   const handleCopy = (copyUrl, index) => {
-    setCopiedUrl({url: copyUrl, index});
+    setCopiedUrl({ url: copyUrl, index });
     navigator.clipboard.writeText(copyUrl);
     setTimeout(() => {
       setCopiedUrl({});
@@ -48,8 +48,12 @@ function Demo() {
     const articlesFromLocalStorage = JSON.parse(localStorage.getItem('articles'));
 
     if (articlesFromLocalStorage) {
-      setAllArticles(articlesFromLocalStorage);
+      setTimeout(() => setAllArticles(articlesFromLocalStorage), 0);
     }
+    setTimeout(() => {
+      setLang('fr');
+      setLength(0);
+    });
   }, []);
 
   return (

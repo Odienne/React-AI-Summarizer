@@ -4,8 +4,6 @@ const BASE_URL = 'https://article-extractor-and-summarizer.p.rapidapi.com/';
 const HOST = 'article-extractor-and-summarizer.p.rapidapi.com';
 const KEY = import.meta.env.VITE_RAPID_API_ARTICLE_KEY;
 
-
-
 export const articleApi = createApi({
   reducerPath: 'articleApi',
   baseQuery: fetchBaseQuery({
@@ -19,11 +17,11 @@ export const articleApi = createApi({
   }),
   endpoints: (builder) => ({
     getSummary: builder.query({
-      query: (params) => `/summarize?url=${encodeURIComponent(params.articleUrl)}&length=${params.length}&lang=${params.lang}`,
+      query: (params) =>
+        `/summarize?url=${encodeURIComponent(params.articleUrl)}&length=${params.length}&lang=${params.lang}`,
     }),
   }),
 });
 
-
 //lazy to fire it on demand
-export const {useLazyGetSummaryQuery} = articleApi;
+export const { useLazyGetSummaryQuery } = articleApi;
