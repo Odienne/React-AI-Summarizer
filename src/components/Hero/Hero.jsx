@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { logo } from '../../assets';
+import { logo } from '../../../public/assets';
 import { PROJECT_LINK } from '../../constants/constants';
 
 function Hero() {
