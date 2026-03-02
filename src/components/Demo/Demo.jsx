@@ -9,7 +9,7 @@ function Demo() {
     url: '',
     summary: '',
   });
-  const [lang, setLang] = useState('fr');
+  const [lang, setLang] = useState('en');
   const [length, setLength] = useState(0);
 
   const [copiedUrl, setCopiedUrl] = useState({});
@@ -51,7 +51,7 @@ function Demo() {
       setTimeout(() => setAllArticles(articlesFromLocalStorage), 0);
     }
     setTimeout(() => {
-      setLang('fr');
+      setLang('en');
       setLength(0);
     });
   }, []);
